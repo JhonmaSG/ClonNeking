@@ -1,4 +1,4 @@
-### ClonNeking
+# ClonNeking
 
 El objetivo de este proyecto es realizar un clon basandose en la aplicación NEQUI como guía, donde tendra algunas funcionalidades basicas de:
 
