@@ -16,8 +16,11 @@
         android:text="Neking"
         android:textColor="#FFFFFF"
         android:textSize="75sp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="307dp"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -34,21 +37,30 @@
         android:layout_marginTop="607dp" />
 
     <FrameLayout
-        android:orientation="vertical"
+        android:id="@+id/frameLayout2"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:background="@drawable/border_pink"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="344dp">
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="344dp">
+
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="204dp"
         android:layout_height="46dp"
-        android:background="@drawable/border_gray"
         android:alpha="0.5"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="16dp">
+        android:background="@drawable/border_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="16dp">
 
     </FrameLayout>
 
@@ -132,21 +144,29 @@
         android:layout_marginTop="19dp"/>
 
     <FrameLayout
+        android:id="@+id/frameLayout4"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/question_icon"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp">
 
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout3"
         android:layout_width="325dp"
         android:layout_height="46dp"
         android:alpha="0.5"
         android:background="@drawable/border_gray"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="597dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="597dp">
 
     </FrameLayout>
 
@@ -167,8 +187,11 @@
         android:layout_height="46dp"
         android:background="@drawable/border_pink"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="659dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="659dp">
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -180,6 +203,18 @@
             android:textSize="20sp"
             android:layout_gravity="center" />
     </FrameLayout>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="282dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="597dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
