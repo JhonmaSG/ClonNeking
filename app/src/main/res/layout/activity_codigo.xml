@@ -8,7 +8,7 @@
     tools:context=".Codigo">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgretroceder"
         android:layout_width="37dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titlecodigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/manrope"
@@ -30,21 +30,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgretroceder"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.028" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="132dp"
-        android:background="#210049"
-        android:rotation="50"
-        android:src="@android:drawable/screen_background_light"
+        android:id="@+id/imgsquare"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"
+        app:srcCompat="@drawable/square_full_solid" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/eye_regular"
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="204dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
