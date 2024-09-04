@@ -78,12 +78,25 @@
         android:id="@+id/txttime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/manrope"
         android:text="29:58"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtvence"
+        app:layout_constraintStart_toStartOf="@+id/txtvence"
+        app:layout_constraintTop_toBottomOf="@+id/txtvence" />
+
+    <TextView
+        android:id="@+id/txtvence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/manrope"
+        android:text="Vence a las"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txtcodigo"
         app:layout_constraintStart_toStartOf="@+id/txtcodigo"
         app:layout_constraintTop_toBottomOf="@+id/txtcodigo" />
