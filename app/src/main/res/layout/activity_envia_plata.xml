@@ -7,7 +7,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_envia_plata">
+    tools:context=".activity_envia_plata"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/inputmensaje"
+        android:layout_width="363dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/manrope"
+        android:gravity="top"
+        android:hint="Mensaje"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#111111"
+        app:layout_constraintEnd_toEndOf="@+id/inputcuanto"
+        app:layout_constraintStart_toStartOf="@+id/inputcuanto"
+        app:layout_constraintTop_toBottomOf="@+id/inputcuanto" />
 
     <ImageView
         android:id="@+id/imgretroceder"
@@ -28,17 +49,84 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="207dp"
-        android:layout_marginBottom="625dp"
         android:fontFamily="@font/manrope"
         android:text="Envia Plata"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgretroceder"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imgretroceder" />
+
+    <EditText
+        android:id="@+id/inputcel"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/edittext_background"
+        android:drawableEnd="@drawable/user"
+        android:ems="10"
+        android:fontFamily="@font/manrope"
+        android:hint="Cel"
+        android:inputType="number"
+        android:lineSpacingExtra="8sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#111111"
+        app:layout_constraintEnd_toEndOf="@+id/titlecodigo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titlecodigo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/manrope"
+        android:text="Revisa bien el número para enviarle a la persona correcta"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputcel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputcel"
+        app:layout_constraintTop_toBottomOf="@+id/inputcel" />
+
+    <EditText
+        android:id="@+id/inputcuanto"
+        android:layout_width="363dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/manrope"
+        android:hint="¿Cuanto?"
+        android:inputType="numberDecimal"
+        android:lineSpacingExtra="8sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#111111"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnenviaplata"
+        android:layout_width="363dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#E9078F"
+        android:fontFamily="@font/manrope"
+        android:text="Sigue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputmensaje"
+        app:layout_constraintVertical_bias="0.803" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
