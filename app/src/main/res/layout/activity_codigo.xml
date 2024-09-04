@@ -48,12 +48,44 @@
         app:srcCompat="@drawable/square_full_solid" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:id="@+id/imgeye"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgsquare"
+        app:layout_constraintStart_toStartOf="@+id/imgsquare"
+        app:layout_constraintTop_toTopOf="@+id/imgsquare"
         app:srcCompat="@drawable/eye_regular"
         app:tint="@color/white"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="204dp" />
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtcodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/manrope"
+        android:text="947821"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgsquare"
+        app:layout_constraintStart_toStartOf="@+id/imgsquare"
+        app:layout_constraintTop_toBottomOf="@+id/imgeye" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/manrope"
+        android:text="29:58"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtcodigo"
+        app:layout_constraintStart_toStartOf="@+id/txtcodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtcodigo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

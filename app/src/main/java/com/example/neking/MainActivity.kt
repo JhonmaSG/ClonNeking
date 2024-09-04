@@ -1,6 +1,8 @@
 package com.example.neking
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_sacar)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val btnPuntoFisico = findViewById<Button>(R.id.btnPuntoFisico)
+        val btnCajero = findViewById<Button>(R.id.btnCajero)
+
+        btnPuntoFisico.setOnClickListener{
+            val intentPuntoFisico = Intent(this,Codigo::class.java).apply {}
+            startActivity(intentPuntoFisico)
         }
+        btnCajero.setOnClickListener {
+            val intentCajero = Intent(this,Codigo::class.java).apply {}
+            startActivity(intentCajero)
+        }
+
     }
 }
