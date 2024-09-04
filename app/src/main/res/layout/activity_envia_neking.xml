@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity_envia_plata"
+    tools:context=".activity_envia_neking"
     tools:ignore="ExtraText">
 
     <EditText
@@ -43,7 +43,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/titlecodigo"
+        android:id="@+id/titleconfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -73,9 +73,9 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:textColorHint="#111111"
-        app:layout_constraintEnd_toEndOf="@+id/titlecodigo"
+        app:layout_constraintEnd_toEndOf="@+id/titleconfirmar"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/titlecodigo"
+        app:layout_constraintStart_toStartOf="@+id/titleconfirmar"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btnenviaplata"
+        android:id="@+id/btnlisto"
         android:layout_width="363dp"
         android:layout_height="65dp"
         android:backgroundTint="#E9078F"

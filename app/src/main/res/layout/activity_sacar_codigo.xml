@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/retroceder" />
 
     <TextView
-        android:id="@+id/titlecodigo"
+        android:id="@+id/titleconfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/manrope"

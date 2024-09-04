@@ -2,20 +2,17 @@ package com.example.neking
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Codigo : AppCompatActivity() {
     private var isCodeHidden = false  // Variable para llevar el control del estado
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_codigo)
+        setContentView(R.layout.activity_sacar_codigo)
         val btnCodigoAtras = findViewById<ImageView>(R.id.imgretroceder)
 
         val imgeye = findViewById<ImageView>(R.id.imgeye)

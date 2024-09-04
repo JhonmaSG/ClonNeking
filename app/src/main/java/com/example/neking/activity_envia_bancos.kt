@@ -8,16 +8,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class activity_envia_plata : AppCompatActivity() {
+class activity_envia_bancos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_envia_plata)
+        setContentView(R.layout.activity_envia_bancos)
+
         val btnCodigoAtras = findViewById<ImageView>(R.id.imgretroceder)
 
-        btnCodigoAtras.setOnClickListener {
-            val intentCodigoAtras = Intent(this,activity_main_envia::class.java).apply {}
-            startActivity(intentCodigoAtras)
+        btnCodigoAtras.setOnClickListener{
+            val intentAtras = Intent(this,activity_envia::class.java).apply {}
+            startActivity(intentAtras)
         }
     }
 }

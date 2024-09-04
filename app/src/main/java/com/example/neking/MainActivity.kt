@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main_sacar)
+        setContentView(R.layout.activity_sacar)
         val btnPuntoFisico = findViewById<Button>(R.id.btnotrosbancos)
         val btnCajero = findViewById<Button>(R.id.btnneking)
 
