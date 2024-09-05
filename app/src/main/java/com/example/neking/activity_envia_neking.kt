@@ -30,7 +30,7 @@ class activity_envia_neking : AppCompatActivity() {
             val cuanto = edtcuanto.text.toString()
             val mensaje = edtmensaje.text.toString()
 
-            val intentConfirmarPago = Intent(this,activity_envia_por_confirmar::class.java).apply {
+            val intentConfirmarPago = Intent(this,activity_envia_neking_confirmar::class.java).apply {
                 putExtra("Celular",cel)
                 putExtra("Cuanto",cuanto)
                 putExtra("Mensaje",mensaje)

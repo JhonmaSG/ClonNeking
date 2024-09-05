@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class activity_envia_confirmado : AppCompatActivity() {
+class activity_envia_neking_confirmado : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -15,8 +15,8 @@ class activity_envia_confirmado : AppCompatActivity() {
 
         val btnconfirmar = findViewById<Button>(R.id.btnlisto)
 
-        val tvcelular = findViewById<TextView>(R.id.txtresulcel)
-        val tvcuanto = findViewById<TextView>(R.id.txtresulcuanto)
+        val tvcelular = findViewById<TextView>(R.id.txtresultipodocumento)
+        val tvcuanto = findViewById<TextView>(R.id.txtresuldestinario)
         val tvmensaje = findViewById<TextView>(R.id.txtresulmensaje)
         //Traer los datos de la Activity Anterior
         val cel = intent.getStringExtra("Celular")

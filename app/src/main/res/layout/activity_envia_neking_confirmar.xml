@@ -5,23 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_envia_por_confirmar">
+    tools:context=".activity_envia_neking_confirmar">
 
     <TextView
-        android:id="@+id/txtresulcel"
+        android:id="@+id/txtresultipodocumento"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtcelular"
+        app:layout_constraintEnd_toEndOf="@+id/txttipodocumento"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtcelular"
-        app:layout_constraintTop_toBottomOf="@+id/txtcelular" />
+        app:layout_constraintStart_toStartOf="@+id/txttipodocumento"
+        app:layout_constraintTop_toBottomOf="@+id/txttipodocumento" />
 
     <TextView
-        android:id="@+id/txtmensaje"
+        android:id="@+id/txtbanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -30,10 +30,10 @@
         android:textColor="#E9078F"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtresulcuanto"
+        app:layout_constraintEnd_toEndOf="@+id/txtresuldestinario"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtresulcuanto"
-        app:layout_constraintTop_toBottomOf="@+id/txtresulcuanto" />
+        app:layout_constraintStart_toStartOf="@+id/txtresuldestinario"
+        app:layout_constraintTop_toBottomOf="@+id/txtresuldestinario" />
 
     <TextView
         android:id="@+id/txtresulmensaje"
@@ -43,13 +43,13 @@
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtmensaje"
+        app:layout_constraintEnd_toEndOf="@+id/txtbanco"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtmensaje"
-        app:layout_constraintTop_toBottomOf="@+id/txtmensaje" />
+        app:layout_constraintStart_toStartOf="@+id/txtbanco"
+        app:layout_constraintTop_toBottomOf="@+id/txtbanco" />
 
     <TextView
-        android:id="@+id/txtcuanto"
+        android:id="@+id/txtdestinario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -58,26 +58,26 @@
         android:textColor="#E9078F"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtresulcel"
+        app:layout_constraintEnd_toEndOf="@+id/txtresultipodocumento"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtresulcel"
-        app:layout_constraintTop_toBottomOf="@+id/txtresulcel" />
+        app:layout_constraintStart_toStartOf="@+id/txtresultipodocumento"
+        app:layout_constraintTop_toBottomOf="@+id/txtresultipodocumento" />
 
     <TextView
-        android:id="@+id/txtresulcuanto"
+        android:id="@+id/txtresuldestinario"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtcuanto"
+        app:layout_constraintEnd_toEndOf="@+id/txtdestinario"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtcuanto"
-        app:layout_constraintTop_toBottomOf="@+id/txtcuanto" />
+        app:layout_constraintStart_toStartOf="@+id/txtdestinario"
+        app:layout_constraintTop_toBottomOf="@+id/txtdestinario" />
 
     <TextView
-        android:id="@+id/txtcelular"
+        android:id="@+id/txttipodocumento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

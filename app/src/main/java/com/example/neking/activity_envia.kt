@@ -3,6 +3,7 @@ package com.example.neking
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -13,6 +14,7 @@ class activity_envia : AppCompatActivity() {
         setContentView(R.layout.activity_envia)
         val btnneking = findViewById<Button>(R.id.btnneking)
         val btnbancos = findViewById<Button>(R.id.btnotrosbancos)
+
 
         btnneking.setOnClickListener{
             val intentPuntoFisico = Intent(this,activity_envia_neking::class.java).apply {}
