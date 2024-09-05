@@ -19,7 +19,7 @@ class Codigo : AppCompatActivity() {
         val txtcodigo = findViewById<TextView>(R.id.txtcodigo)
 
         btnCodigoAtras.setOnClickListener {
-            val intentCodigoAtras = Intent(this,MainActivity::class.java).apply {}
+            val intentCodigoAtras = Intent(this,MainActivity_Jhon::class.java).apply {}
             startActivity(intentCodigoAtras)
         }
         imgeye.setOnClickListener {
