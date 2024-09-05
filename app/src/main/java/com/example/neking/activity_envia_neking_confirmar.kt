@@ -18,14 +18,17 @@ class activity_envia_neking_confirmar : AppCompatActivity() {
         val btnconfirmar = findViewById<Button>(R.id.btnconfirmar)
         val btnscorregir = findViewById<Button>(R.id.btncorregir)
 
-        val tvcelular = findViewById<TextView>(R.id.txtresultipodocumento)
-        val tvcuanto = findViewById<TextView>(R.id.txtresuldestinario)
+        val tvnombree = findViewById<TextView>(R.id.txtresulnombredestino)
+        val tvcelular = findViewById<TextView>(R.id.txtresulcelular)
+        val tvcuanto = findViewById<TextView>(R.id.txtresulcuanto)
         val tvmensaje = findViewById<TextView>(R.id.txtresulmensaje)
         //Traer los datos de la Activity Anterior
         val cel = intent.getStringExtra("Celular")
+        val name = intent.getStringExtra("Nombre")
         val cua = intent.getStringExtra("Cuanto")
         val men = intent.getStringExtra("Mensaje")
         // Imprimir los Datos en el Activity
+        tvnombree.text = "$name"
         tvcelular.text = "$cel"
         tvcuanto.text = "$cua"
         tvmensaje.text = "$men"
@@ -35,10 +38,12 @@ class activity_envia_neking_confirmar : AppCompatActivity() {
             startActivity(intentAtras)
         }
         btnconfirmar.setOnClickListener{
+            val names = tvnombree.text.toString()
             val cell = tvcelular.text.toString()
             val cuanto = tvcuanto.text.toString()
             val mensaje = tvmensaje.text.toString()
             val intentConfirmar = Intent(this,activity_envia_neking_confirmado::class.java).apply {
+                putExtra("Nombre",names)
                 putExtra("Celular",cell)
                 putExtra("Cuanto",cuanto)
                 putExtra("Mensaje",mensaje)
@@ -46,8 +51,14 @@ class activity_envia_neking_confirmar : AppCompatActivity() {
             startActivity(intentConfirmar)
         }
         btnscorregir.setOnClickListener{
-            val intentCorregir = Intent(this,activity_envia_neking::class.java).apply {}
-            startActivity(intentCorregir)
+            val intentCorregir = Intent().apply {
+                putExtra("Nombre", name)
+                putExtra("Celular", cel)
+                putExtra("Cuanto", cua)
+                putExtra("Mensaje", men)
+            }
+            setResult(RESULT_OK, intentCorregir)
+            finish() // Cierra esta activity y regresa a la anterior
         }
 
     }

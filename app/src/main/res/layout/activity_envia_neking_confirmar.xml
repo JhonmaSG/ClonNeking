@@ -8,20 +8,20 @@
     tools:context=".activity_envia_neking_confirmar">
 
     <TextView
-        android:id="@+id/txtresultipodocumento"
-        android:layout_width="200dp"
+        android:id="@+id/txtresulcelular"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txttipodocumento"
+        app:layout_constraintEnd_toEndOf="@+id/txtcelular"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txttipodocumento"
-        app:layout_constraintTop_toBottomOf="@+id/txttipodocumento" />
+        app:layout_constraintStart_toStartOf="@+id/txtcelular"
+        app:layout_constraintTop_toBottomOf="@+id/txtcelular" />
 
     <TextView
-        android:id="@+id/txtbanco"
+        android:id="@+id/txtmensaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -30,26 +30,26 @@
         android:textColor="#E9078F"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtresuldestinario"
+        app:layout_constraintEnd_toEndOf="@+id/txtresulcuanto"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtresuldestinario"
-        app:layout_constraintTop_toBottomOf="@+id/txtresuldestinario" />
+        app:layout_constraintStart_toStartOf="@+id/txtresulcuanto"
+        app:layout_constraintTop_toBottomOf="@+id/txtresulcuanto" />
 
     <TextView
         android:id="@+id/txtresulmensaje"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtbanco"
+        app:layout_constraintEnd_toEndOf="@+id/txtmensaje"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtbanco"
-        app:layout_constraintTop_toBottomOf="@+id/txtbanco" />
+        app:layout_constraintStart_toStartOf="@+id/txtmensaje"
+        app:layout_constraintTop_toBottomOf="@+id/txtmensaje" />
 
     <TextView
-        android:id="@+id/txtdestinario"
+        android:id="@+id/txtcuanto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -58,26 +58,26 @@
         android:textColor="#E9078F"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtresultipodocumento"
+        app:layout_constraintEnd_toEndOf="@+id/txtresulcelular"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtresultipodocumento"
-        app:layout_constraintTop_toBottomOf="@+id/txtresultipodocumento" />
+        app:layout_constraintStart_toStartOf="@+id/txtresulcelular"
+        app:layout_constraintTop_toBottomOf="@+id/txtresulcelular" />
 
     <TextView
-        android:id="@+id/txtresuldestinario"
-        android:layout_width="200dp"
+        android:id="@+id/txtresulcuanto"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtdestinario"
+        app:layout_constraintEnd_toEndOf="@+id/txtcuanto"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtdestinario"
-        app:layout_constraintTop_toBottomOf="@+id/txtdestinario" />
+        app:layout_constraintStart_toStartOf="@+id/txtcuanto"
+        app:layout_constraintTop_toBottomOf="@+id/txtcuanto" />
 
     <TextView
-        android:id="@+id/txttipodocumento"
+        android:id="@+id/txtcelular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -86,10 +86,11 @@
         android:textColor="#E9078F"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txtresultnombre"
+        app:layout_constraintEnd_toEndOf="@+id/txtresulnombredestino"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtresultnombre"
-        app:layout_constraintTop_toBottomOf="@+id/txtresultnombre" />
+        app:layout_constraintStart_toStartOf="@+id/txtresulnombredestino"
+        app:layout_constraintTop_toBottomOf="@+id/txtresulnombredestino" />
+
 
     <ImageView
         android:id="@+id/imgretroceder"
@@ -100,9 +101,8 @@
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/retroceder" />
-
 
     <TextView
         android:id="@+id/titleconfirmar"
@@ -117,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/btncorregir"
@@ -167,12 +167,11 @@
         app:layout_constraintTop_toBottomOf="@+id/titleconfirmar" />
 
     <TextView
-        android:id="@+id/txtresultnombre"
-        android:layout_width="200dp"
+        android:id="@+id/txtresulnombredestino"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/manrope"
-        android:text="And*** Or***"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txtnombredestino"

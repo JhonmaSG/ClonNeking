@@ -15,14 +15,17 @@ class activity_envia_neking_confirmado : AppCompatActivity() {
 
         val btnconfirmar = findViewById<Button>(R.id.btnlisto)
 
-        val tvcelular = findViewById<TextView>(R.id.txtresultipodocumento)
-        val tvcuanto = findViewById<TextView>(R.id.txtresuldestinario)
+        val tvname = findViewById<TextView>(R.id.txtresulnombredestino)
+        val tvcelular = findViewById<TextView>(R.id.txtresulcelular)
+        val tvcuanto = findViewById<TextView>(R.id.txtresulcuanto)
         val tvmensaje = findViewById<TextView>(R.id.txtresulmensaje)
         //Traer los datos de la Activity Anterior
+        val name = intent.getStringExtra("Nombre")
         val cel = intent.getStringExtra("Celular")
         val cua = intent.getStringExtra("Cuanto")
         val men = intent.getStringExtra("Mensaje")
         // Imprimir los Datos en el Activity
+        tvname.text = "$name"
         tvcelular.text = "$cel"
         tvcuanto.text = "$cua"
         tvmensaje.text = "$men"

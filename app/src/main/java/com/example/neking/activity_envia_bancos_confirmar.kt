@@ -49,9 +49,18 @@ class activity_envia_bancos_confirmar : AppCompatActivity() {
             val intentAtras = Intent(this,activity_envia_bancos::class.java).apply {}
             startActivity(intentAtras)
         }
-        btnscorregir.setOnClickListener{
-            val intentCorregir = Intent(this,activity_envia_bancos::class.java).apply {}
-            startActivity(intentCorregir)
+        btnscorregir.setOnClickListener {
+            val intentCorregir = Intent().apply {
+                putExtra("Nombre", nom)
+                putExtra("TipoDocumento", tipo)
+                putExtra("Documento", doc)
+                putExtra("Banco", banco)
+                putExtra("TipoCuenta", tipocu)
+                putExtra("NumeroCuenta", numcu)
+                putExtra("Cuanto", cua)
+            }
+            setResult(RESULT_OK, intentCorregir)
+            finish() // Cierra esta activity y regresa a la anterior
         }
 
         btnenviar.setOnClickListener{
