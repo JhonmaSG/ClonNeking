@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFBFB"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".historial">
+    android:paddingTop="?attr/actionBarSize">
+    <!-- xmlns:tools="http://schemas.android.com/tools" -->
 
     <TextView
         android:id="@+id/main"
@@ -23,16 +21,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="355dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/style_border_edit_text"
+        android:backgroundTint="#B3ADAD"
         android:orientation="horizontal"
         android:paddingTop="1dp"
         android:paddingBottom="4dp"
@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="-4dp"
+            android:background="#B3ADAD"
             android:src="@drawable/lupa_de_detective" />
 
         <EditText
@@ -57,7 +58,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="-4dp"
-            android:background="#FFFFFF"
+            android:background="#B3ADAD"
             android:fontFamily="@font/manrope_light"
             android:hint="Buscar"
             android:inputType="text"
