@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEBEB"
+    android:backgroundTint="#EDE7E7"
+    tools:context=".MainActivity">
+
+    <!-- Vista para el rectángulo rosa con bordes redondeados y rotación -->
+
+    <!-- Vista para el rectángulo morado con bordes redondeados y rotación -->
+
+    <View
+        android:id="@+id/rounded_rectangle_view"
+        android:layout_width="501dp"
+        android:layout_height="461dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/rounded_rectangle_pink"
+        android:rotation="-6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rounded_rectangle_view2"
+        android:layout_width="494dp"
+        android:layout_height="451dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-85dp"
+        android:background="@drawable/rounded_rectangle_purple"
+        android:rotation="-6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rounded_rectangle_view3"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/userlogo"
+        android:rotation="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rounded_rectangle_view5"
+        android:layout_width="259dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/rounded_rectangle_gray"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnaccion"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#E9078F"
+        android:text="$"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonnotification"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bell"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Disponible"
+        android:textColor="#FAF5F5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="212dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="00,00"
+        android:textColor="#EDE7E7"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnColchon"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/colchoncito"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="532dp"
+        android:text="Colchon"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnhistory"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginBottom="-60dp"
+        android:background="@drawable/listlogo"
+        app:layout_constraintBottom_toTopOf="@+id/rounded_rectangle_view5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="110dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="648dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toTopOf="@+id/rounded_rectangle_view5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="29dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/eye"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="HOLA USUARIO"
+        android:textColor="#F1EDED"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
