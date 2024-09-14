@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Neking_Light"
         tools:targetApi="31">
-
+        <activity
+            android:name=".detaller_historico_r"
+            android:label="@string/empty_string"
+            android:theme="@style/Base.Theme.Neking_Light"
+            android:exported="true"/>
+        <activity
+            android:name=".detalle_historico_c"
+            android:label="@string/empty_string"
+            android:theme="@style/Base.Theme.Neking_Light"
+            android:exported="true"/>
         <activity
             android:name=".historial"
             android:label="@string/empty_string"

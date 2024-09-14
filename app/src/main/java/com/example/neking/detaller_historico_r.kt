@@ -2,22 +2,19 @@ package com.example.neking
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-
-class historial : AppCompatActivity() {
+class detaller_historico_r : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.historial)
-        /**val btn_regresar : Button = findViewById(R.id.chao)
+        setContentView(R.layout.detalle_historico_r)
+        val btn_regresar : ImageView = findViewById(R.id.retroceder_detalle_r)
         btn_regresar.setOnClickListener {
-            val intent = Intent(this, detalle_historico_c::class.java)
+            val intent = Intent(this, historial::class.java)
             startActivity(intent)
-        }**/
-
+        }
     }
 }
