@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Neking"
         tools:targetApi="31">
         <activity
+            android:name=".activity_envia_bancos_confirmado"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia_bancos_confirmar"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia_bancos"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia_neking_confirmado"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia_neking_confirmar"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia_neking"
+            android:exported="false" />
+        <activity
+            android:name=".activity_envia"
+            android:exported="false" />
+        <activity
+            android:name=".Historial"
+            android:exported="false" />
+        <activity
             android:name=".Colchon"
             android:exported="false" />
         <activity

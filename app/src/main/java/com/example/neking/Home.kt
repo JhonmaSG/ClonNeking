@@ -3,6 +3,7 @@ package com.example.neking
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Button
@@ -17,6 +18,13 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_principal)
+
+        //ABRIR HISTORIAL
+        val btnHistory = findViewById<Button>(R.id.btnhistory)
+        btnHistory.setOnClickListener{
+            val intent = Intent(this, Historial::class.java)
+            startActivity(intent)
+        }
 
         // Botón para navegar a la vista "colchon.xml"
         val btnNavigate = findViewById<Button>(R.id.btnColchon)
