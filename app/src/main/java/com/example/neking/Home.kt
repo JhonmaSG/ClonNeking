@@ -98,24 +98,25 @@ class Home : AppCompatActivity() {
             isMenuOpen = !isMenuOpen  // Alterna el estado del menú
         }
 
-        // Configuración de clics para los botones dentro del menú desplegable
-        btnAction1.setOnClickListener {
-            Log.d("Menu", "Acción 1 seleccionada")
-            closeMenu(buttons, descriptions)
+        // Configuración para los botones dentro del menú desplegable
+        btnAction1.setOnClickListener {//Envia
+            navigateToActivity(activity_envia::class.java)
+        }
+        btnAction2.setOnClickListener {//Codigo QR
+            navigateToActivity(Home::class.java)
+        }
+        btnAction3.setOnClickListener {//Sacar
+            navigateToActivity(activity_sacar::class.java)
+        }
+        btnAction4.setOnClickListener {//Recargar
+            navigateToActivity(Home::class.java)
+        }
+    }
 
-        }
-        btnAction2.setOnClickListener {
-            Log.d("Menu", "Acción 2 seleccionada")
-            closeMenu(buttons, descriptions)
-        }
-        btnAction3.setOnClickListener {
-            Log.d("Menu", "Acción 3 seleccionada")
-            closeMenu(buttons, descriptions)
-        }
-        btnAction4.setOnClickListener {
-            Log.d("Menu", "Acción 4 seleccionada")
-            closeMenu(buttons, descriptions)
-        }
+    // Función para iniciar actividades
+    private fun navigateToActivity(activityClass: Class<*>) {
+        val intent = Intent(this, activityClass)
+        startActivity(intent)
     }
 
     // Función para abrir el menú con animación

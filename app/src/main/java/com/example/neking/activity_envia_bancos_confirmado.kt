@@ -45,7 +45,7 @@ class activity_envia_bancos_confirmado : AppCompatActivity() {
 
 
         btnenviar.setOnClickListener{
-            val intentAdelante = Intent(this,activity_envia::class.java).apply {}
+            val intentAdelante = Intent(this,Home::class.java).apply {}
             startActivity(intentAdelante)
         }
     }

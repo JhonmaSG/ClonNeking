@@ -32,7 +32,7 @@ class activity_envia_neking_confirmado : AppCompatActivity() {
 
 
         btnconfirmar.setOnClickListener{
-            val intentConfirmar = Intent(this,activity_envia::class.java).apply {}
+            val intentConfirmar = Intent(this,Home::class.java).apply {}
             startActivity(intentConfirmar)
         }
 

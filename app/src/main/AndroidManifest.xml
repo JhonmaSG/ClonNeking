@@ -33,6 +33,12 @@
             android:name=".activity_envia"
             android:exported="false" />
         <activity
+            android:name=".activity_sacar"
+            android:exported="false" />
+        <activity
+            android:name=".codigo"
+            android:exported="false" />
+        <activity
             android:name=".historial"
             android:label="@string/empty_string"
             android:exported="true"/>

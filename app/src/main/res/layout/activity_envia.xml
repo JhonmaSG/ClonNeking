@@ -35,48 +35,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgretroceder" />
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/btnneking"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#210049"
+        android:fontFamily="@font/manrope"
+        android:text="Neking"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:iconPadding="45dp"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleconfirmar"
-        app:layout_constraintVertical_bias="0.038"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/titleconfirmar" />
 
-        <Button
-            android:id="@+id/btnneking"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:backgroundTint="#210049"
-            android:fontFamily="@font/manrope"
-            android:text="Neking"
-            android:textAlignment="viewStart"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:icon="@drawable/user"
-            app:iconPadding="50dp"
-            app:iconSize="40dp"
-            app:iconTint="@color/white" />
-
-        <Button
-            android:id="@+id/btnotrosbancos"
-            android:layout_width="350dp"
-            android:layout_height="100dp"
-            android:backgroundTint="#210049"
-            android:fontFamily="@font/manrope"
-            android:text="Otros Bancos"
-            android:textAlignment="viewStart"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:cornerRadius="10dp"
-            app:icon="@drawable/star_regular"
-            app:iconPadding="50dp"
-            app:iconSize="40dp" />
-    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/btnotrosbancos"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#210049"
+        android:fontFamily="@font/manrope"
+        android:text="Otros Bancos"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:iconPadding="50dp"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnneking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

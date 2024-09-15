@@ -3,18 +3,17 @@ package com.example.neking
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
-class activity_envia : AppCompatActivity() {
+class activity_sacar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_envia)
-        val btnneking = findViewById<Button>(R.id.btnneking)
-        val btnbancos = findViewById<Button>(R.id.btnotrosbancos)
+        setContentView(R.layout.activity_sacar)
+        val btnPuntoFisico = findViewById<Button>(R.id.btnneking)
+        val btnCajero = findViewById<Button>(R.id.btncajero)
         val btnCodigoAtras = findViewById<ImageView>(R.id.imgretroceder)
 
         btnCodigoAtras.setOnClickListener{
@@ -22,13 +21,14 @@ class activity_envia : AppCompatActivity() {
             startActivity(intentAtras)
         }
 
-        btnneking.setOnClickListener{
-            val intentPuntoFisico = Intent(this,activity_envia_neking::class.java).apply {}
+        btnPuntoFisico.setOnClickListener{
+            val intentPuntoFisico = Intent(this,codigo::class.java).apply {}
             startActivity(intentPuntoFisico)
         }
-        btnbancos.setOnClickListener{
-            val intentBancos = Intent(this,activity_envia_bancos::class.java).apply {}
-            startActivity(intentBancos)
+        btnCajero.setOnClickListener {
+            val intentCajero = Intent(this,codigo::class.java).apply {}
+            startActivity(intentCajero)
         }
+
     }
 }
