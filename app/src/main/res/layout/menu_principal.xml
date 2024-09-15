@@ -9,14 +9,19 @@
     android:backgroundTint="#EDE7E7"
     tools:context=".MainActivity">
 
-    <!-- Vista para el rectángulo rosa con bordes redondeados y rotación -->
+    <!-- View del desenfoque -->
+    <View
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone" />
 
-    <!-- Vista para el rectángulo morado con bordes redondeados y rotación -->
-
+    <!-- Rectángulos de fondo -->
     <View
         android:id="@+id/rounded_rectangle_view"
-        android:layout_width="501dp"
-        android:layout_height="461dp"
+        android:layout_width="488dp"
+        android:layout_height="437dp"
         android:layout_marginStart="-10dp"
         android:layout_marginTop="-70dp"
         android:background="@drawable/rounded_rectangle_pink"
@@ -27,8 +32,8 @@
 
     <View
         android:id="@+id/rounded_rectangle_view2"
-        android:layout_width="494dp"
-        android:layout_height="451dp"
+        android:layout_width="491dp"
+        android:layout_height="418dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="-85dp"
         android:background="@drawable/rounded_rectangle_purple"
@@ -37,6 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Imagen de usuario -->
     <View
         android:id="@+id/rounded_rectangle_view3"
         android:layout_width="57dp"
@@ -49,6 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Botones y vista principal -->
     <View
         android:id="@+id/rounded_rectangle_view5"
         android:layout_width="259dp"
@@ -64,9 +71,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnaccion"
-        android:layout_width="72dp"
-        android:layout_height="69dp"
+        android:id="@+id/btnAccion"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
         android:layout_marginStart="316dp"
         android:layout_marginTop="648dp"
         android:layout_marginEnd="23dp"
@@ -74,13 +81,132 @@
         android:backgroundTint="#E9078F"
         android:text="$"
         android:textAlignment="center"
-        android:textSize="30sp"
-        app:cornerRadius="16dp"
+        android:textSize="25sp"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botones desplegables -->
+    <Button
+        android:id="@+id/btnAction1"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9078F"
+
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableTop="@drawable/back_row"
+    android:drawablePadding="8dp"
+    />
+    <TextView
+        android:id="@+id/descAction1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Enviar Dinero"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/btnAction1"
+        app:layout_constraintEnd_toStartOf="@id/btnAction1" />
+    <Button
+        android:id="@+id/btnAction2"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        android:backgroundTint="#E9078F"
+
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAction1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableTop="@drawable/up_row"
+    android:drawablePadding="8dp"
+    />
+    <TextView
+        android:id="@+id/descAction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Recargar"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnAction2"
+        app:layout_constraintEnd_toStartOf="@id/btnAction2" />
+    <Button
+        android:id="@+id/btnAction3"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9078F"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAction2"
+        app:layout_constraintEnd_toEndOf="parent"
+     
+    android:drawablePadding="8dp"
+    />
+    <TextView
+        android:id="@+id/descAction3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Sacar"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnAction3"
+        app:layout_constraintEnd_toStartOf="@id/btnAction3" />
+    <Button
+        android:id="@+id/btnAction4"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9078F"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnAction3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableTop="@drawable/qrcode"
+    android:drawablePadding="8dp"
+    />
+
+
+    <TextView
+        android:id="@+id/descAction4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="Código QR"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnAction4"
+        app:layout_constraintEnd_toStartOf="@id/btnAction4" />
 
     <Button
         android:id="@+id/buttonnotification"
@@ -94,7 +220,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewdisp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -107,7 +233,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewMoney"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
@@ -121,24 +247,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/btnColchon"
         android:layout_width="76dp"
         android:layout_height="81dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="476dp"
         android:background="@drawable/colchoncito"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewColchon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="532dp"
+        android:layout_marginTop="560dp"
         android:text="Colchon"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -157,22 +283,25 @@
         app:layout_constraintBottom_toTopOf="@+id/rounded_rectangle_view5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnhome"
-        android:layout_width="110dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="648dp"
+        android:layout_marginBottom="-60dp"
         android:background="@drawable/home"
         app:layout_constraintBottom_toTopOf="@+id/rounded_rectangle_view5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/view"
+        android:id="@+id/btnview"
         android:layout_width="29dp"
         android:layout_height="20dp"
         android:layout_marginStart="232dp"
@@ -182,15 +311,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/blur_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#88000000"
-        android:visibility="gone"/>
+
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewUsuario"
         android:layout_width="66dp"
         android:layout_height="40dp"
         android:layout_marginStart="250dp"
