@@ -104,8 +104,8 @@
         app:layout_constraintBottom_toTopOf="@id/btnAccion"
         app:layout_constraintEnd_toEndOf="parent"
         android:drawableTop="@drawable/back_row"
-    android:drawablePadding="8dp"
-    />
+        android:drawablePadding="8dp"
+        />
     <TextView
         android:id="@+id/descAction1"
         android:layout_width="wrap_content"
@@ -133,8 +133,8 @@
         app:layout_constraintBottom_toTopOf="@id/btnAction1"
         app:layout_constraintEnd_toEndOf="parent"
         android:drawableTop="@drawable/up_row"
-    android:drawablePadding="8dp"
-    />
+        android:drawablePadding="8dp"
+        />
     <TextView
         android:id="@+id/descAction2"
         android:layout_width="wrap_content"
@@ -160,9 +160,9 @@
         app:cornerRadius="16dp"
         app:layout_constraintBottom_toTopOf="@id/btnAction2"
         app:layout_constraintEnd_toEndOf="parent"
-     
-    android:drawablePadding="8dp"
-    />
+
+        android:drawablePadding="8dp"
+        />
     <TextView
         android:id="@+id/descAction3"
         android:layout_width="wrap_content"
@@ -190,8 +190,8 @@
         app:layout_constraintBottom_toTopOf="@id/btnAction3"
         app:layout_constraintEnd_toEndOf="parent"
         android:drawableTop="@drawable/qrcode"
-    android:drawablePadding="8dp"
-    />
+        android:drawablePadding="8dp"
+        />
 
 
     <TextView
