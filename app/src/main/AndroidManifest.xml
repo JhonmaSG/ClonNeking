@@ -43,7 +43,7 @@
             android:label="@string/empty_string"
             android:exported="true"/>
         <activity
-            android:name=".detaller_historico_r"
+            android:name=".detalle_historico_r"
             android:label="@string/empty_string"
             android:theme="@style/Base.Theme.Neking_Light"
             android:exported="true"/>
