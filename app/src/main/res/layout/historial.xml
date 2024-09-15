@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+    <!-- xmlns:tools="http://schemas.android.com/tools" -->
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginBottom="695dp"
+        android:fontFamily="@font/manrope_light"
+        android:text="Movimientos"
+        android:textColor="#1E1E1E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="355dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/style_border_edit_text"
+        android:backgroundTint="#FFDCCDD9"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="@+id/main"
+        app:layout_constraintTop_toBottomOf="@+id/main">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="-4dp"
+            android:background="#FFDCCDD9"
+            android:src="@drawable/lupa_de_detective" />
+
+        <EditText
+            android:id="@+id/Buscar"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="-4dp"
+            android:background="#DCCDD9"
+            android:fontFamily="@font/manrope_light"
+            android:hint="Buscar"
+            android:inputType="text"
+            android:paddingTop="1dp"
+            android:paddingEnd="1dp"
+            android:paddingBottom="-10dp"
+            android:singleLine="true"
+            android:textColor="#1E1E1E" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="430dp"
+        android:layout_height="25dp"
+        android:background="@drawable/horizontal_line"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

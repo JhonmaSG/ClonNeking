@@ -64,19 +64,19 @@ class activity_envia_bancos_confirmar : AppCompatActivity() {
         }
 
         btnenviar.setOnClickListener{
-            val nom = tvNom.text.toString()
+            val nomm = tvNom.text.toString()
             val tipoDoc = tvTipoDoc.text.toString()
-            val doc = tvDoc.text.toString()
-            val banco = tvBanco.text.toString()
+            val docc = tvDoc.text.toString()
+            val bancoo = tvBanco.text.toString()
             val tipoCuenta = tvTipoCuenta.text.toString()
             val numCuenta = tvNumCuenta.text.toString()
             val cuanto = tvCuanto.text.toString()
 
             val intentAdelante = Intent(this,activity_envia_bancos_confirmado::class.java).apply {
-                putExtra("Nombre",nom)
+                putExtra("Nombre",nomm)
                 putExtra("TipoDocumento",tipoDoc)
-                putExtra("Documento",doc)
-                putExtra("Banco",banco)
+                putExtra("Documento",docc)
+                putExtra("Banco",bancoo)
                 putExtra("TipoCuenta",tipoCuenta)
                 putExtra("NumeroCuenta",numCuenta)
                 putExtra("Cuanto",cuanto)

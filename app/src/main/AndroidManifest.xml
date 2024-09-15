@@ -32,29 +32,28 @@
             android:exported="false" />
         <activity
             android:name=".activity_envia"
-            android:exported="true"> <!-- Cambiado a true para la actividad principal -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Codigo"
             android:exported="false" />
         <activity
-            android:name=".MainActivity_Jhon"
+            android:name=".Historial"
+            android:exported="false" />
+        <activity
+            android:name=".Colchon"
+            android:exported="false" />
+        <activity
+            android:name=".Password"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
-
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
