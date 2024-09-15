@@ -9,7 +9,7 @@
     <!-- xmlns:tools="http://schemas.android.com/tools" -->
 
     <TextView
-        android:id="@+id/main"
+        android:id="@+id/movimientos_h"
         android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/layout_buscar_h"
         android:layout_width="355dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
@@ -38,13 +38,13 @@
         android:orientation="horizontal"
         android:paddingTop="1dp"
         android:paddingBottom="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/main"
+        app:layout_constraintEnd_toEndOf="@+id/movimientos_h"
         app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="@+id/main"
-        app:layout_constraintTop_toBottomOf="@+id/main">
+        app:layout_constraintStart_toStartOf="@+id/movimientos_h"
+        app:layout_constraintTop_toBottomOf="@+id/movimientos_h">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/lupa_h"
             android:layout_width="16dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -53,7 +53,7 @@
             android:src="@drawable/lupa_de_detective" />
 
         <EditText
-            android:id="@+id/Buscar"
+            android:id="@+id/Buscar_h"
             android:layout_width="314dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -73,10 +73,40 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/linea_horizontal_h"
         android:layout_width="430dp"
         android:layout_height="25dp"
         android:background="@drawable/horizontal_line"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintEnd_toEndOf="@+id/layout_buscar_h"
+        app:layout_constraintStart_toStartOf="@+id/layout_buscar_h"
+        app:layout_constraintTop_toBottomOf="@+id/layout_buscar_h" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="609dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_horizontal_h"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_v_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="536dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_horizontal_h"
+        app:layout_constraintVertical_bias="0.19" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

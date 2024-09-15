@@ -8,18 +8,18 @@
     android:foregroundTint="#FFFFFF">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/flecha_abajo_compro_r"
         android:layout_width="35dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/recuadro_compro_r"
+        app:layout_constraintStart_toStartOf="@+id/recuadro_compro_r"
+        app:layout_constraintTop_toTopOf="@+id/recuadro_compro_r"
         app:srcCompat="@drawable/flecha_hacia_abajo" />
 
     <TextView
-        android:id="@+id/nombre_user_h_c"
+        android:id="@+id/nombre_user_h_r"
         android:layout_width="158dp"
         android:layout_height="29dp"
         android:layout_marginStart="10dp"
@@ -28,7 +28,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/flecha_abajo_compro_r"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.191" />
 
@@ -40,8 +40,8 @@
         android:text="De"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/nombre_user_h_c"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_user_h_c" />
+        app:layout_constraintStart_toStartOf="@+id/nombre_user_h_r"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_user_h_r" />
 
     <TextView
         android:id="@+id/valor_user_h_c"
@@ -54,12 +54,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toEndOf="@+id/nombre_user_h_c"
+        app:layout_constraintStart_toEndOf="@+id/nombre_user_h_r"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.216" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/recuadro_compro_r"
         android:layout_width="399dp"
         android:layout_height="82dp"
         android:layout_marginStart="12dp"
