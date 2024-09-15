@@ -109,4 +109,43 @@
         app:layout_constraintTop_toBottomOf="@+id/linea_horizontal_h"
         app:layout_constraintVertical_bias="0.19" />
 
+    <View
+        android:id="@+id/rounded_rectangle_view5"
+        android:layout_width="259dp"
+        android:layout_height="74dp"
+        android:background="@drawable/rounded_rentangle_grey"
+        android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/btnhistory"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:background="@drawable/listlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_rectangle_view5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="60dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rounded_rectangle_view5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

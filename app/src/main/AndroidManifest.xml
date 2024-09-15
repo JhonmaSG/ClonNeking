@@ -45,12 +45,12 @@
         <activity
             android:name=".detalle_historico_r"
             android:label="@string/empty_string"
-            android:theme="@style/Base.Theme.Neking_Light"
+            android:theme="@style/Theme.Neking"
             android:exported="true"/>
         <activity
             android:name=".detalle_historico_c"
             android:label="@string/empty_string"
-            android:theme="@style/Base.Theme.Neking_Light"
+            android:theme="@style/Theme.Neking"
             android:exported="true"/>
         <activity
             android:name=".colchon"

@@ -2,6 +2,7 @@ package com.example.neking
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,12 +16,18 @@ class historial : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.historial)
-        /**
-        val btn_regresar : Button = findViewById(R.id.chao)
+
+        val btn_regresar = findViewById<Button>(R.id.btnhome)
         btn_regresar.setOnClickListener {
-            val intent = Intent(this, detalle_historico_c::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
-        }**/
+        }
+
+        val btn_history = findViewById<Button>(R.id.btnhistory)
+        btn_history.setOnClickListener {
+            val intent = Intent(this, historial::class.java)
+            startActivity(intent)
+        }
 
 
         var rv_comprobantes: RecyclerView = findViewById(R.id.recycle_v_e)
