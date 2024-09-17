@@ -218,9 +218,9 @@
         android:fontFamily="@font/manrope_bold"
         android:inputType="number"
         android:textColor="#FFFFFF"
+        android:maxLength="10"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
