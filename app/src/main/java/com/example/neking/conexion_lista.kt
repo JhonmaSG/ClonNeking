@@ -17,11 +17,10 @@ class conexion_lista(val listaComprobantes: List<lista_comprobantes>) :
             LayoutInflater.from(parent.context).inflate(R.layout.comprobante_retiro, parent, false)
         return ViewHolder(vista)
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nombre.text = listaComprobantes[position].nombre
-        holder.estado.text = listaComprobantes[position].estado
-        holder.valor.text = listaComprobantes[position].valor
+            holder.nombre.text = listaComprobantes[position].nombre
+            holder.estado.text = listaComprobantes[position].estado
+            holder.valor.text = listaComprobantes[position].valor
     }
 
     override fun getItemCount(): Int {

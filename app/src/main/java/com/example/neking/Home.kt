@@ -46,14 +46,14 @@ class Home : AppCompatActivity() {
         //btn Home
         val btnHome = findViewById<Button>(R.id.btnhome)
         btnHome.setOnClickListener {
-            val intentsHome = Intent(this, Home::class.java)
+            val intentsHome = Intent(this@Home  , Home::class.java)
             startActivity(intentsHome)
         }
 
         //btn History
         val btnHistory = findViewById<Button>(R.id.btnhistory)
         btnHistory.setOnClickListener {
-            val intentsHome = Intent(this, historial::class.java)
+            val intentsHome = Intent(this@Home  , historial::class.java)
             startActivity(intentsHome)
         }
 

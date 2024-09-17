@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Layout_h_r"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <ImageView
         android:id="@+id/compartir_h"
         android:layout_width="28dp"
         android:layout_height="27dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,8 +21,8 @@
         android:id="@+id/preguntar_h"
         android:layout_width="28dp"
         android:layout_height="27dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintEnd_toStartOf="@+id/compartir_h"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/signo_de_interrogacion" />
@@ -217,7 +217,7 @@
         android:layout_width="28dp"
         android:layout_height="27dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="228dp"
         android:onClick="onClickImage"
         app:layout_constraintEnd_toStartOf="@+id/preguntar_h"
