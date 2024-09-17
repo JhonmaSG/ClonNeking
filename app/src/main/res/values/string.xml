@@ -2,4 +2,31 @@
 <resources>
     <string name="empty_string"></string>
     <string name="titulo">Neking</string>
+    <string-array name="tipos_documentos">
+        <item>Tipo de documento</item>
+        <item>Tarjeta de Identidad</item>
+        <item>Cedula de ciudadania</item>
+        <item>Pasaporte</item>
+        <item>Licencia</item>
+    </string-array>
+
+    <string-array name="bancos">
+        <item>Bancos</item>
+        <item>Daviplata</item>
+        <item>Banco Caja social</item>
+        <item>Banco Pichincha</item>
+        <item>Banco BBVA</item>
+        <item>Banco Agrario</item>
+        <item>Banco Compensar</item>
+        <item>Banco Occidente</item>
+        <item>Banco Oriente</item>
+        <item>Banco Sur</item>
+
+    </string-array>
+
+    <string-array name="tipo_cuenta">
+        <item>Tipo de cuenta</item>
+        <item>Ahorros</item>
+        <item>Corriente</item>
+    </string-array>
 </resources>
