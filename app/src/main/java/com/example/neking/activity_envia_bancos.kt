@@ -28,6 +28,9 @@ class activity_envia_bancos : AppCompatActivity() {
         val inputNumCuenta = findViewById<EditText>(R.id.inputnumerocuenta)
         val inputCuanto = findViewById<EditText>(R.id.inputcuanto)
 
+        // Expresión regular para validar solo letras y espacios
+        val nombrePattern = Regex("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$")
+
         btnCodigoAtras.setOnClickListener{
             val intentAtras = Intent(this,activity_envia::class.java).apply {}
             startActivity(intentAtras)
@@ -44,13 +47,20 @@ class activity_envia_bancos : AppCompatActivity() {
             val verinumCuenta = inputNumCuenta.text.toString().trim()
             val vericuanto = inputCuanto.text.toString().trim()
 
+            // Expresión regular para validar solo letras y espacios
+            val nombrePattern = Regex("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$")
+
             if (verinom.isEmpty() || veritipoDoc.isEmpty() || veridoc.isEmpty() ||
                 veribanco.isEmpty() || veritipoCuenta.isEmpty() ||
                 verinumCuenta.isEmpty() || vericuanto.isEmpty()) {
                 Toast.makeText(this, "Llene todos los campos", Toast.LENGTH_LONG).show()
 
+            } else if (!verinom.matches(nombrePattern)) {
+                // Validación para el nombre: no permitir números ni caracteres especiales
+                Toast.makeText(this, "El nombre solo puede contener letras y espacios", Toast.LENGTH_LONG).show()
+
             } else {
-                // Si todos los campos están llenos, next activity
+                // Si todos los campos están llenos y el nombre es válido, next activity
                 val nom = inputNom.text.toString()
                 val tipoDoc = inputTipoDoc.text.toString()
                 val doc = inputDoc.text.toString()
@@ -59,18 +69,18 @@ class activity_envia_bancos : AppCompatActivity() {
                 val numCuenta = inputNumCuenta.text.toString()
                 val cuanto = inputCuanto.text.toString()
 
-                val intentAdelante =
-                    Intent(this, activity_envia_bancos_confirmar::class.java).apply {
-                        putExtra("Nombre", nom)
-                        putExtra("TipoDocumento", tipoDoc)
-                        putExtra("Documento", doc)
-                        putExtra("Banco", banco)
-                        putExtra("TipoCuenta", tipoCuenta)
-                        putExtra("NumeroCuenta", numCuenta)
-                        putExtra("Cuanto", cuanto)
-                    }
+                val intentAdelante = Intent(this, activity_envia_bancos_confirmar::class.java).apply {
+                    putExtra("Nombre", nom)
+                    putExtra("TipoDocumento", tipoDoc)
+                    putExtra("Documento", doc)
+                    putExtra("Banco", banco)
+                    putExtra("TipoCuenta", tipoCuenta)
+                    putExtra("NumeroCuenta", numCuenta)
+                    putExtra("Cuanto", cuanto)
+                }
                 startActivity(intentAdelante)
             }
         }
+
     }
 }
