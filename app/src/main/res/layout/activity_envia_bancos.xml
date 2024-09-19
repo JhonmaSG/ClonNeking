@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleconfirmar"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+    <Spinner
         android:id="@+id/inputtipodocumento"
         android:layout_width="365dp"
         android:layout_height="45dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputtipodocumento"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+    <Spinner
         android:id="@+id/inputbanco"
         android:layout_width="365dp"
         android:layout_height="45dp"
@@ -111,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputdocumento"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+    <Spinner
         android:id="@+id/inputtipocuenta"
         android:layout_width="365dp"
         android:layout_height="45dp"

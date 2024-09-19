@@ -22,8 +22,11 @@ class activity_envia_neking : AppCompatActivity() {
         val edtmensaje = findViewById<EditText>(R.id.inputmensaje)
         val btnsiguiente = findViewById<Button>(R.id.btnlisto)
 
+        // Expresión regular para validar solo letras y espacios
+        val nombrePattern = Regex("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$")
+
         btnCodigoAtras.setOnClickListener {
-            val intentCodigoAtras = Intent(this,activity_envia::class.java).apply {}
+            val intentCodigoAtras = Intent(this, activity_envia::class.java).apply {}
             startActivity(intentCodigoAtras)
         }
 
@@ -34,11 +37,17 @@ class activity_envia_neking : AppCompatActivity() {
             val veriname = edtname.text.toString().trim()
             val vericuanto = edtcuanto.text.toString().trim()
             val verimensaje = edtmensaje.text.toString().trim()
-            //validación
-            if (vericel.isEmpty() || veriname.isEmpty() ||vericuanto.isEmpty() || verimensaje.isEmpty()) {
-                Toast.makeText(this, "Llene todos los campos", Toast.LENGTH_LONG).show()
-            } else {
 
+            // Validación
+            if (vericel.isEmpty() || veriname.isEmpty() || vericuanto.isEmpty() || verimensaje.isEmpty()) {
+                Toast.makeText(this, "Llene todos los campos", Toast.LENGTH_LONG).show()
+            } else if (!veriname.matches(nombrePattern)) {
+                // Validación para nombre: no permitir números ni caracteres especiales
+                Toast.makeText(this, "El nombre solo puede contener letras y espacios", Toast.LENGTH_LONG).show()
+
+            } else if (vericel.length > 10 || vericel.length < 10) {
+                Toast.makeText(this, "El número de celular debe tener 10 dígitos", Toast.LENGTH_LONG).show()
+            } else {
                 val cel = edtcelular.text.toString()
                 val name = edtname.text.toString()
                 val cuanto = edtcuanto.text.toString()

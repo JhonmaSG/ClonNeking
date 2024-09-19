@@ -88,6 +88,7 @@
         android:ems="10"
         android:fontFamily="@font/manrope"
         android:hint="Cel"
+        android:maxLength="10"
         android:inputType="number"
         android:lineSpacingExtra="8sp"
         android:paddingStart="20dp"
