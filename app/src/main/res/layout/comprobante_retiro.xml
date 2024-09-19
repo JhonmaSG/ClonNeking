@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:animateLayoutChanges="true"
+    android:visibility="visible"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recuadro_compro_r"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="3dp">
+
+
+            <ImageView
+                android:id="@+id/flecha_abajo_compro_r"
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="4dp"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/recuadro_compro_r"
+                app:layout_constraintStart_toStartOf="@+id/recuadro_compro_r"
+                app:layout_constraintTop_toTopOf="@+id/recuadro_compro_r"
+                app:layout_constraintVertical_bias="0.187"
+                app:srcCompat="@drawable/flecha_hacia_abajo" />
+
+            <TextView
+                android:id="@+id/nombre_user_h_r"
+                android:layout_width="177dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="10dp"
+                android:text="Chao"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/flecha_abajo_compro_r"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.191" />
+
+            <TextView
+                android:id="@+id/estado_user_h_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="De"
+                android:textColor="#8C8888"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/nombre_user_h_r"
+                app:layout_constraintTop_toBottomOf="@+id/nombre_user_h_r" />
+
+            <TextView
+                android:id="@+id/valor_user_h_c"
+                android:layout_width="154dp"
+                android:layout_height="26dp"
+                android:text="-$50.000,00"
+                android:textColor="#E9078F"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toEndOf="@+id/nombre_user_h_r"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.218" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

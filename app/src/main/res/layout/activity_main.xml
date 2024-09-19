@@ -5,14 +5,221 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#1E001F"
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="307dp"
+        android:fontFamily="@font/manrope_extrabold"
+        android:text="Neking"
+        android:textColor="#FFFFFF"
+        android:textSize="75sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_extrabold"
+        android:text="+57"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="607dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/border_pink"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="344dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:alpha="0.5"
+        android:background="@drawable/border_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="16dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/manrope"
+        android:text="Clave"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/manrope"
+        android:text="dinámica"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/manrope_semibold"
+        android:text="012345"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:rotation="180"
+        app:srcCompat="@mipmap/squares"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="23dp"/>
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/circle_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="22dp">
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:indeterminateTint="#DB0083"
+        android:max="100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="19dp"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/question_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
+        android:alpha="0.5"
+        android:background="@drawable/border_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="597dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="25dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="607dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btnEntra"
+        android:layout_width="325dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="659dp"
+        android:background="@drawable/border_pink"
+        android:textAlignment="center"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/manrope_bold"
+            android:gravity="center"
+            android:text="Entra"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:foreground="?attr/selectableItemBackground"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/txtNumber"
+        android:layout_width="282dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="597dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/manrope_bold"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:maxLength="10"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
