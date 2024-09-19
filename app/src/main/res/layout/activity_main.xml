@@ -12,12 +12,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
         android:layout_marginTop="307dp"
         android:fontFamily="@font/manrope_extrabold"
         android:text="Neking"
         android:textColor="#FFFFFF"
         android:textSize="75sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
